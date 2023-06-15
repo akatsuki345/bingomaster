@@ -32,7 +32,10 @@ $(function () {
     return list;
   };
   var create_card = function () {
-
+     var table = make_table();
+     for (var i = 0; i < table.length; i++) {
+       $('#bi' + i).text(table[i]);
+     }
   }
   }
 });
